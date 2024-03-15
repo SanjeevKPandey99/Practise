@@ -3,42 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stone Paper Scissors </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
-
-    <div class="heading">
-        <h1>STONE PAPER SCISSORS</h1>
+   
+    <h1>TIC TAC TOE</h1>
+    <div class="winner hide">
+        <h1 class="msg "></h1>
+        <br>
+        <button id="reset" class="newGame hide">New Game</button>
     </div>
+    <div class="tictac">
+       
+            
+                <button class="box" ></button>
+                <button class="box" ></button>
+                <button class="box" ></button>
+                <button class="box" ></button>
+                <button class="box" ></button>
+                <button class="box" ></button>
+                <button class="box" ></button>
+                <button class="box" ></button>
+                <button class="box" ></button>    
+    </div>
+
+    <button id="reset" class="resetBtn">Reset Button</button>
+       
     
-    <div class="choices">
-        <div id="rock" class="choice">
-            <img src="rock.png" alt="Stone or Rock" >
-        </div>
-        <div id="paper" class="choice">
-            <img src="paper.png" alt="Paper" >
-        </div>
-        <div id="scissors" class="choice">
-            <img src="scissors.png" alt="Scissors" >
-         </div>
-    </div>
-
-    <div class="scoreBoard">
-        <div class="player">
-            <p id="playerScore">0</p>
-            <p>You</p>
-        </div>
-        <div class="computer">
-            <p id="computerScore">0</p>
-            <p>Computer</p>
-        </div>
-    </div>
-
-    <div class="msgContainer">
-        <p id="msg">Choose to start playing</p>
-    </div>
-        
-    <script src="app.js"></script>
+    
+    
+    <script src="tictactoe.js"></script>  
 </body>
 </html>
